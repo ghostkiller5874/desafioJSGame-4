@@ -1,5 +1,15 @@
 @import url('./reset.css');
 
+body{
+    cursor: url('../assets/cursor/yugicursor.png'), default;
+}
+button,
+a,
+img:hover,
+button:hover,
+a:hover{
+    cursor: url('../assets/cursor/yamiyugicursorGLOW.png'),auto;
+}
 /* video de fundo */
 .bg-video {
     position: absolute;
@@ -103,9 +113,11 @@
 .card-versus__container {
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: .1rem;
     height: 300px;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .card-infield {
@@ -135,4 +147,8 @@
 }
 .card:hover{
     transform: scale(1.2);
+}
+
+.debug{
+    border: 1px solid greenyellow;
 }
